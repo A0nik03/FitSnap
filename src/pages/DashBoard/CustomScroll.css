@@ -1,0 +1,23 @@
+.scrollbar-hide::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar-thumb {
+    background-color: #FAA057;
+    border-radius: 10px;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+
+  .scrollbar-hide::-webkit-scrollbar-thumb:hover {
+    background: #f39c12;
+  }
+  
+
+  .scrollbar-hide::-webkit-scrollbar {
+    border-radius: 10px;
+  }
+  
