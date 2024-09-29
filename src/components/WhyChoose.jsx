@@ -36,10 +36,10 @@ const WhyChoose = () => {
   ];
 
   return (
-    <div className="m-10 flex flex-col justify-center items-center">
+    <div className="m-10 flex flex-col justify-center items-center mt-36 mb-20">
       <div className="flex flex-col gap-6 justify-center items-center mb-10">
-        <h1 className="font-semibold text-6xl">WHY CHOOSE FITSNAP</h1>
-        <h4 className="font-medium text-2xl">GET REALTIME UPDATE WITH AI</h4>
+        <h1 className="font-semibold text-6xl font-montserrat">WHY CHOOSE FITSNAP</h1>
+        <h4 className="font-medium text-2xl font-montserrat">GET REALTIME UPDATE WITH AI</h4>
       </div>
       <div>
         {data.map((item, index) => (

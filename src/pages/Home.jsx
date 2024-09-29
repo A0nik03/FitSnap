@@ -10,6 +10,7 @@ import Revolutionize from "../components/Revolutionize";
 import Footer from "../components/Footer";
 
 const Home = () => {
+  
   return (
     <>
       <div className="flex flex-col">

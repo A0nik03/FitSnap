@@ -23,8 +23,8 @@ const Sided = ({ data }) => {
             className="w-[50%] flex flex-col gap-8 justify-center p-20"
             style={{ backgroundColor: color }}
           >
-            <h2 className="font-semibold text-6xl text-white">{heading}</h2>
-            <p className="font-normal text-2xl text-white">{para}</p>
+            <h2 className="font-semibold text-6xl text-white font-lato">{heading}</h2>
+            <p className="font-normal text-2xl text-white font-lato">{para}</p>
           </div>
         </>
       ) : (
@@ -33,8 +33,8 @@ const Sided = ({ data }) => {
             className="w-[50%] flex flex-col gap-8 justify-center p-20"
             style={{ backgroundColor: color }}
           >
-            <h2 className="font-semibold text-6xl text-white">{heading}</h2>
-            <p className="font-normal text-2xl text-white">{para}</p>
+            <h2 className="font-semibold text-6xl text-white font-lato">{heading}</h2>
+            <p className="font-normal text-2xl text-white font-lato">{para}</p>
           </div>
           <div className="w-[50%]">
             {isVideo ? (

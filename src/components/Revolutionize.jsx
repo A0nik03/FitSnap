@@ -53,20 +53,20 @@ const Revolutionize = () => {
     },
   ];
   return (
-    <div className="flex flex-col justify-center items-center gap-8">
+    <div className="flex flex-col justify-center items-center gap-8 mb-20">
       <div className="w-full mt-4">
-        <p className="ml-5 font-light text-8xl italic tracking-[12px] leading-tight">
+        <p className="ml-4 font-light text-[87px] font-montserrat italic tracking-[12px] leading-tight">
           REVOLUTIONIZE YOUR GYM
         </p>
       </div>
-      <div className="w-[75%]  flex flex-col gap-5 justify-center items-center">
-        <p className="text-7xl font-medium">LOREM IPSUM</p>
+      <div className="w-[75%]  flex flex-col gap-5 justify-center items-center mt-10">
+        <p className="text-7xl font-medium font-montserrat mb-10">LOREM IPSUM</p>
         <div className="flex w-full gap-10 bg-blue-60 p-5">
           <div className="w-[33%] flex flex-col p-5 gap-4 rounded-2xl border border-[#13118F]">
             {data.map((item, index) => {
               return (
                 <div key={index} className="flex justify-between">
-                  <p className="font-medium text-[17.3px]">{item.text}</p>
+                  <p className="font-medium text-[17.3px] font-inter">{item.text}</p>
                   <img src={item.icon} alt="" />
                 </div>
               );
@@ -74,13 +74,13 @@ const Revolutionize = () => {
           </div>
           <div className="w-[67%] flex justify-center items-center">
             <div className="w-[67%] h-[35%] p-1 flex flex-col justify-between gap-4">
-              <p className="font-medium text-xl">
+              <p className="font-medium text-xl font-montserrat">
                 To benefits of all the features of FitSnap, the ideal tablet
                 featuring 8GB RAM and an immersive 11-inch screen should offer a
                 balance of performance, display quality
               </p>
               <div className="w-64 p-2.5 rounded-full border border-[#1E1C95] flex justify-between items-center mt-10">
-                <p className="text-[#1E1C95] font-medium text-xl">
+                <p className="text-[#1E1C95] font-medium text-xl font-montserrat">
                   Download Brochure
                 </p>
                 <svg

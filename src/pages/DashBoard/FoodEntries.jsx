@@ -70,7 +70,7 @@ const FoodEntries = () => {
   ];
 
   return (
-    <div className="w-[74.5%] h-[390px] p-4 bg-white shadow-lg rounded-lg">
+    <div className="w-[74.5%] h-[390px] p-4 bg-white shadow-lg rounded-lg font-inter">
       <div className="flex justify-between">
         <h2 className="text-4xl font-normal mb-4">Food entries</h2>
         <svg

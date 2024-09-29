@@ -34,7 +34,7 @@ const NavBar = () => {
           <p
             key={index}
             onClick={() => handleClick(index)}
-            className={`cursor-pointer transition-colors duration-300 ${
+            className={`cursor-pointer transition-colors duration-300 font-inter ${
               activeOption === index ? "text-[#13118F]" : "text-black"
             }`}
           >

@@ -9,7 +9,7 @@ const BodyFat = () => {
     <div className="w-[23%] h-[360px] p-4 bg-white shadow-md rounded-md flex flex-col items-center">
       <h4 className="mb-10 font-normal text-4xl self-start">Body Fat</h4>
 
-      <div className="relative w-full flex justify-center">
+      <div className="relative w-full flex justify-center font-inter">
         <div style={{ width: '50vw', maxWidth: '200px', height: '50vw', maxHeight: '200px' }}>
           <CircularProgressbar
             value={percentage}
@@ -19,8 +19,8 @@ const BodyFat = () => {
               trailColor: "#d6d6d6",
               pathTransitionDuration: 0.5,
               textSize: "24px",
-              trailWidth: 8, // Set the trail width here
-              pathWidth: 10, // Set the path width here
+              trailWidth: 8,
+              pathWidth: 10,
             })}
           />
           <div

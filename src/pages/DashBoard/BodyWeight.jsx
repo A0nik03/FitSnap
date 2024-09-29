@@ -18,7 +18,7 @@ const data = [
 
 const BodyWeight = () => {
   return (
-    <div className="h-[360px] w-[74.5%] bg-green-50">
+    <div className="h-[360px] w-[74.5%] bg-green-50 font-inter">
       <div className="p-4 bg-white shadow-lg rounded-lg">
         <h2 className="text-4xl font-normal mb-4 ml-10">Body Weight</h2>
         <ResponsiveContainer height={276}>

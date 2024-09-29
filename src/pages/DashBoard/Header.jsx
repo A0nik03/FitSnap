@@ -4,7 +4,7 @@ import { assets } from "../../assets/assets";
 const Header = () => {
   return (
     <div
-      className="py-1 px-2 rounded-md bg-white flex justify-between items-center"
+      className="py-1 px-2 rounded-md bg-white flex justify-between items-center font-inter"
       style={{
         boxShadow: "0px 8px 2px 0px #2B2D3703",
         backdropFilter: "blur(10px)",

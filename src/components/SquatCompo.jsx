@@ -3,7 +3,7 @@ import { assets } from "../assets/assets";
 
 const SquatCompo = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-5 mt-20">
+    <div className="flex flex-col justify-center items-center gap-8 mt-20 font-montserrat">
       <h1 className="font-medium text-7xl">LOREM IPSUM</h1>
       <p className="font-medium text-2xl">
         Lorem ipsum dolor sit amet, consectetur adipiscing

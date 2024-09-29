@@ -47,21 +47,19 @@ const Footer = () => {
 
   return (
     <div className="w-full min-h-screen bg-black px-10">
-      {/* Contact Section */}
       <div className="Contact w-full h-auto mt-20 flex flex-col md:flex-row">
         <div className="w-full md:w-[60%] flex flex-col justify-center p-8">
-          <h1 className="font-semibold text-[40px] leading-[48.74px] text-white">
+          <h1 className="font-semibold font-montserrat text-[40px] leading-[48.74px] text-white">
             WANT TO INSTALL FITSNAP AI CAMERA IN YOUR GYM? PLEASE SUBMIT YOUR
             DETAILS BELOW.
           </h1>
-          <p className="w-[80%] font-semibold text-2xl text-white mt-10">
+          <p className="w-[80%] font-semibold font-lato text-2xl text-white mt-10">
             Want to install FitSnap AI Camera in your GYM? Please submit your
             details below.
           </p>
         </div>
 
-        {/* Form Section */}
-        <div className="Form w-full md:w-[50%] p-8">
+        <div className="Form w-full md:w-[50%] p-8 font-montserrat">
           <form>
             {formData.map((element, index) => (
               <div key={index} className="mb-8">
@@ -69,7 +67,7 @@ const Footer = () => {
                   className="w-full text-white text-2xl font-medium bg-black placeholder-white p-2 focus:border-none focus:outline-none"
                   type="text"
                   placeholder={element.placeHolder}
-                  aria-label={element.placeHolder} // Accessibility improvement
+                  aria-label={element.placeHolder}
                 />
                 <hr className="bg-white h-[1px] w-full my-10" />
               </div>
@@ -92,8 +90,8 @@ const Footer = () => {
               />
             </div>
             <div className="h-[148px] w-[492px]">
-              <h2 className="text-5xl font-semibold">{`Get ${company.name}`}</h2>
-              <p className="my-4 text-[16px] font-normal">
+              <h2 className="text-5xl font-semibold font-roboto">{`Get ${company.name}`}</h2>
+              <p className="my-4 text-[16px] font-normal font-opensans">
                 {company.description}
               </p>
             </div>
@@ -112,11 +110,11 @@ const Footer = () => {
 
           <div className="flex flex-col gap-16 mt-8">
             <div className="flex flex-col gap-3">
-              <h3 className="text-2xl font-semibold">Download the app</h3>
+              <h3 className="text-2xl font-semibold font-roboto">Download the app</h3>
               <p>
                 <a
                   href={downloadLinks.android}
-                  className="text-2xl font-normal text-white"
+                  className="text-2xl font-normal text-white font-opensans"
                 >
                   Android - Google Play Store
                 </a>
@@ -124,7 +122,7 @@ const Footer = () => {
               <p>
                 <a
                   href={downloadLinks.ios}
-                  className="text-2xl font-normal text-white"
+                  className="text-2xl font-normal font-opensans text-white"
                 >
                   iOS - Apple App Store
                 </a>
@@ -132,16 +130,16 @@ const Footer = () => {
             </div>
 
             <div className="flex flex-col gap-4">
-              <h3 className="text-2xl font-semibold">Contact</h3>
-              <p className="text-2xl font-normal">{contact.address}</p>
-              <p className="text-2xl font-normal">{contact.phone}</p>
+              <h3 className="text-2xl font-semibold font-roboto">Contact</h3>
+              <p className="text-2xl font-normal font-opensans">{contact.address}</p>
+              <p className="text-2xl font-normal font-opensans">{contact.phone}</p>
             </div>
           </div>
           <div className="mb-28">
-            <h3 className="text-2xl font-semibold mb-4">Company</h3>
+            <h3 className="text-2xl font-semibold mb-4 font-roboto">Company</h3>
             {links.map((link, index) => (
               <p key={index}>
-                <a href={link.url} className="text-white text-2xl font-normal">
+                <a href={link.url} className="text-white text-2xl font-normal font-opensans">
                   {link.text}
                 </a>
               </p>

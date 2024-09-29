@@ -22,8 +22,8 @@ const ThingsYouNeed = () => {
   ];
 
   return (
-    <div className="w-screen h-[1056px] mt-12">
-      <p className="text-center font-medium text-7xl mb-8">THINGS YOU NEED</p>
+    <div className="w-screen h-[1056px] mt-36 font-montserrat mb-10">
+      <p className="text-center font-medium text-7xl mb-16">THINGS YOU NEED</p>
       <div className="w-screen h-[925.3px] overflow-hidden relative">
         <img className="h-full w-full object-cover" src={assets.run} alt="" />
 

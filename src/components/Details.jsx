@@ -2,42 +2,52 @@ import React from "react";
 import { assets } from "../assets/assets";
 
 const Details = () => {
+  const detailsData = [
+    {
+      id: 1,
+      imageSrc: assets.enrolled,
+      count: "50+",
+      label: "GYM Enrolled",
+    },
+    {
+      id: 2,
+      imageSrc: assets.hourglass,
+      count: "250+",
+      label: "Users Enroll",
+    },
+    {
+      id: 3,
+      imageSrc: assets.sessions,
+      count: "60+",
+      label: "Workout Sessions",
+    },
+  ];
+
   return (
     <div className="relative w-full h-auto bg-white mx-auto">
       <div className="h-[155.66px] w-[80%] flex justify-between mx-auto mt-20 relative z-10">
-        <div className="h-[153.74px] w-[201.61px] flex flex-col gap-2 justify-center items-center">
-          <div className="flex gap-[24px] items-center">
-            <img
-              className="h-[100.64px] w-[100.64px] object-contain"
-              src={assets.enrolled}
-              alt="GYM Enrolled"
-            />
-            <p className="font-semibold text-[45.94px]">50+</p>
+        {detailsData.map((detail) => (
+          <div
+            key={detail.id}
+            className="h-[153.74px] w-[201.61px] flex flex-col gap-8 justify-center items-center"
+          >
+            <div className="flex gap-[24px] items-center">
+              <img
+                className="h-[100.64px] w-[100.64px] object-contain"
+                src={detail.imageSrc}
+                alt={detail.label}
+              />
+              <p className="font-semibold text-5xl font-poppins">
+                {detail.count}
+              </p>
+            </div>
+            <div className="w-72 p-2 flex flex-nowrap justify-end">
+              <p className="font-semibold text-2xl font-opensans">
+                {detail.label}
+              </p>
+            </div>
           </div>
-          <p className="font-semibold text-[24px] self-start">GYM Enrolled</p>
-        </div>
-        <div className="h-[153.74px] w-[201.61px] flex flex-col gap-2 justify-center items-center">
-          <div className="flex gap-[24px] items-center">
-            <img
-              className="h-[100.64px] w-[100.64px] object-contain"
-              src={assets.hourglass}
-              alt="Users enroll"
-            />
-            <p className="font-semibold text-[45.94px]">250+</p>
-          </div>
-          <p className="font-semibold text-[24px] self-start">Users enroll</p>
-        </div>
-        <div className="h-[153.74px] w-[201.61px] flex flex-col gap-2 justify-center items-center">
-          <div className="flex gap-[24px] items-center">
-            <img
-              className="h-[100.64px] w-[100.64px] object-contain"
-              src={assets.sessions}
-              alt="Workout Sessions"
-            />
-            <p className="font-semibold text-[45.94px]">60+</p>
-          </div>
-          <p className="font-semibold text-[24px] self-start">Workout Sessions</p>
-        </div>
+        ))}
       </div>
 
       <div className="absolute bottom-0 left-0 right-0 z-0 w-full h-auto">

@@ -13,7 +13,7 @@ const Miles = () => {
 
   return (
     <div
-      className="relative mx-auto w-[23%] h-[343.04px] bg-[#3D73AF] rounded-lg p-4 text-white shadow-lg backdrop-blur-sm ml-8">
+      className="relative mx-auto w-[23%] h-[343.04px] bg-[#3D73AF] rounded-lg p-4 text-white font-inter shadow-lg backdrop-blur-sm ml-8">
       <h2 className="text-4xl font-normal">Miles Walked</h2>
       <div className="flex items-center my-4">
         <span className="text-3xl font-normal">{milesWalked}</span>
@@ -41,8 +41,9 @@ const Miles = () => {
         <div
           className="absolute bg-white rounded-full w-4 h-4 border-2 border-blue-500"
           style={{
-            left: `calc(${markerPosition.x}% - 8px)`,
+            left: `calc(${markerPosition.x}%)`,
             top: `${markerPosition.y}px`,
+            bottom: 15
           }}
         ></div>
       </div>

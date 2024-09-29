@@ -32,7 +32,7 @@ const Stats = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-4">
       {stats.map((stat, index) => (
-        <div key={index} className="p-4 bg-white shadow-md rounded-md flex">
+        <div key={index} className="p-4 bg-white shadow-md rounded-md flex font-inter">
           <div
             style={{ backgroundColor: stat.color }}
             className={`relative z-0 rounded-md h-[77px] w-[77px] flex justify-center items-center mr-5`}

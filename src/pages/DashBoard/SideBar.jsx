@@ -28,7 +28,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="h-full bg-white p-4 shadow-md">
+    <div className="h-full bg-white p-4 shadow-md font-inter">
       <button onClick={handleLogoClick} className="h-10 w-full bg-orange-500 mb-10">
         <h2 className="font-normal text-3xl text-center text-white">DietSnap</h2>
       </button>
